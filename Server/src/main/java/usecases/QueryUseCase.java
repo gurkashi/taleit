@@ -1,12 +1,11 @@
 package usecases;
 
 import model.Model;
-import model.Reader;
-import model.Writer;
+import lang.Function;
 
 /**
  * Created by gur on 11/6/2015.
  */
-public interface QueryUseCase<S> extends Reader<Model,S> {
+public abstract class QueryUseCase<S> extends UseCase implements Function<Model> {
 }
 

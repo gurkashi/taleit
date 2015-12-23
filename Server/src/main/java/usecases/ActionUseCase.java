@@ -1,7 +1,7 @@
 package usecases;
 
 import model.Model;
-import model.Writer;
+import lang.Action;
 
-public interface ActionUseCase extends Writer<Model> {
+public abstract class ActionUseCase extends UseCase implements Action<Model> {
 }
